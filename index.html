@@ -9,18 +9,27 @@
 </head>
 
 <body>
-
-	<header>
+	<!-- NAME WITH MOUNTAIN IMAGE -->
+	<header id="home">
 		<div class="wrapper">
 			<h1>Kirstin Kirk</h1>
+			<nav>
+				<ul id="menu">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About Me</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
 			<img src ="images/mountains.jpg" alt = "Lake Isabelle"/>
 		</div>
+
 	</header>
 
 	<main class="wrapper">
     
-			
-    <section>
+<!-- INTRODUCTION & WHAT MAKES ME SPECIAL  -->			
+    <section id="intro">
       <div class="group">
         <div class="item">
         <h2>Hello! I'm Kirstin Kirk.</h2>
@@ -30,19 +39,20 @@
       </div>
     </section>
 
-
+<!-- PASSION FOR WEB DEV -->			
     <section class="align-right">
-        <h2>Why web development?</h2>
-      <div class="group">
-        <div class="item">
+      <h2>Why web development?</h2>
+        <div class="group">
+          <div class="item">
         <p>I am currently studying to be a web developer with Bloc. I started my journey with Bloc because I wanted to pursue a new career path after feeling stuck in my current role. The thing that made me interested in web development is just how important it has become to our everyday lives. Whenever we want to look something up or buy something now a days, where do we turn? <strong> The web.</strong></p>
 
         <p>Another thing that stood out to me with web development was how much growth the industry has seen. I look forward to working with new people in the field whom have been there through that growth and have learned how to adapt to this ever-changing industry. Having a team that you can turn to when a project is stuck or not turning out how you pictured will be essential to providing the best results.</p>
-      </div>
-      </div>
+        </div>
+          </div>
     </section>
 
-    <section>
+<!--PERSONALITY OUTSIDE OF CODING -->			
+    <section id="about">
       <div class="group">
         <div class="item">
         <h2>About me</h2>    
@@ -51,28 +61,28 @@
       </div>
       
     <h3>These are some of my favorite places!</h3>
-      <div class="group pictures">
+      <div class="group">
         <div class="item">
-          <img src ="images/chasm-lake.jpg" alt = "Chasm Lake" class="picture-left">
+          <img src ="images/chasm-lake.jpg" alt = "Chasm Lake">
         </div>
         <div class="item">
-          <img src ="images/keblers-pass.jpg" alt = "Kebler's Pass" class="picture-right">
+          <img src ="images/keblers-pass.jpg" alt = "Kebler's Pass">
         </div>
       </div>
       
-      <div class="group pictures">
-        <div class="item">
-          <img src ="images/mitchell-lake.jpg" alt = "Lone Eagle Peak" class="picture-left">
+      <div class="group">
+        <div class= "item">
+          <img src ="images/mitchell-lake.jpg" alt = "Lone Eagle Peak">
         </div>
         <div class="item">
-          <img src ="images/lone-eagle-peak.jpg" alt = "Mitchell Lake" class="picture-right">
+          <img src ="images/lone-eagle-peak.jpg" alt = "Mitchell Lake">
         </div>
       </div>
     </section>
 
-    <section>
-
-          <h2>Portfolio</h2>
+<!-- PRODUCT SAMPLES -->
+    <section id="portfolio">
+      <h2>Portfolio</h2>
       <div class="group pictures">
         
         <div class="item">
@@ -129,7 +139,7 @@
           </ul>
          </div>
 
-                 <div class="item">
+        <div class="item">
           <img src = "images/coming-soon.jpg" alt = "Coming Soon Photo" class="picture-right">
           <h3>Night Sky</h3>
           <p>This app will include step by steps on how to set up your camera for the best Milky Way photography including:</p>
@@ -149,6 +159,7 @@
         </div>
       </div>
 
+<!-- SERVICES -->			
       <section>
       <h2>My Services</h2>
        <div class="group">
@@ -159,17 +170,34 @@
       </div>
       </section>
 
-    <section>
+<!-- CONTACT INFORMATION -->			
+    <section id="contact">
+      <h2>Contact Me</h2>
       <div class="group">
-        <div class="item">
-        <h2>Contact Me</h2>
-        <p> Please feel free to contact me.</p>
+         <div class="item">
+        <p>Phone Number: <a href="tel:734-718-9172">734-718-9172</a></p>
+        <p>Email: <a href = "mailto: klkirk12@gmail.com<">klkirk12@gmail.com</a></p>
+        <h4>Websites</h4>
     	    <ul class="list-inside">
             <li><a href="https://www.linkedin.com/in/kirstin-kirk-ab49a955/">LinkedIn</a></li>
             <li><a href ="https://github.com/KirstinK12"> GitHub</a></li>
-            <li> <a href="mailto:klkirk12@gmail.com"> Email</a></li>
           </ul>
         </div>
+        <div class="item">
+          <p> Please feel free to conact me.</p>
+        <form>
+          <label for="name">Name:</label>
+          <input id="name" type="text" name="name">
+
+          <label for="email">Email:</label>
+          <input id="email" type="text" name="email">
+
+          <label for="message">Message:</label>
+          <textarea id="message" type="text" name="message"></textarea>
+          <button type="submit">Sumbit</button>
+        </form>
+        </div>
+     
       </div>
     </section>
 	</main>      
